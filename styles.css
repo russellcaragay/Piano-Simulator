@@ -1,0 +1,134 @@
+/* Created by Russell Caragay August 11 2022,
+  Finished: August 14, 2022 */
+
+body {
+  text-align: center;
+  background-color: #eceaea;
+}
+
+.body-dark {
+  background-color: #071824;
+}
+
+h1 {
+  font-size: 4.3rem;
+  color: #0f3d3e;
+  font-family: "Roboto Condensed", sans-serif;
+  line-height: 1em;
+  font-weight: 500;
+}
+
+.h1-dark {
+  color: #f66b0e;
+}
+
+.instruction-dark {
+  color: #efefef;
+}
+.piano-img {
+  width: 20%;
+  border-radius: 12px;
+}
+
+/* Main Piano Section */
+.set {
+  margin: 2% auto 2% auto;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #dbedf3;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+.piano-key {
+  outline: none;
+  border: 5px solid #0f3d3e;
+  font-size: 5rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 2;
+  font-weight: 900;
+  color: #100f0f;
+  text-shadow: 5px 0 #e2dcc8;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 190px;
+  text-align: center;
+  margin: 8px;
+  background-color: white;
+}
+
+.piano-key:hover {
+  cursor: pointer;
+}
+
+.theme-mode {
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: #302f2f;
+  color: #efefef;
+  border-radius: 20px;
+}
+
+.theme-mode:hover {
+  cursor: pointer;
+  background-color: #121212;
+}
+
+.theme-light {
+  background-color: #efefef;
+  color: #121212;
+}
+
+.theme-light:hover {
+  background-color: #ffffff;
+}
+
+/* Footer Section */
+footer {
+  margin-top: 10px;
+  color: #0f3d3e;
+  font-family: sans-serif;
+}
+.footer-dark {
+  color: #c1c1c1;
+}
+
+/* MEDIA QUERY */
+
+/* Extra Small Devices */
+@media (max-width: 575px) {
+  .piano-img {
+    width: 50%;
+  }
+  .piano-key {
+    width: 65px;
+    height: 100px;
+    font-size: 2rem;
+    border: 5px solid #0f3d3e;
+    border-radius: 10px;
+  }
+}
+
+/* Extra Medium Devices */
+@media (max-width: 768px) {
+  .piano-img {
+    width: 55%;
+  }
+  .piano-key {
+    width: 65px;
+    height: 100px;
+    font-size: 2rem;
+    border: 5px solid #0f3d3e;
+    border-radius: 10px;
+  }
+}
