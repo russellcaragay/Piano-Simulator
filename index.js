@@ -51,15 +51,17 @@ function pianoKey(letter){
 for(counter=0; counter < document.querySelectorAll(".piano-key").length; counter++ ){
     // Event Listener DOM query for each buttons
     document.querySelectorAll(".piano-key")[counter].addEventListener("click", function(){
-        pianoKey(this.innerHTML);
         btnAnimation(this.innerHTML.toLowerCase());
+        pianoKey(this.innerHTML);
+        
 });
 }
 
 //Event Listener for each keys pressed in the keyboard.
 document.addEventListener("keypress", function(event){
-    pianoKey(event.key.toUpperCase());
     btnAnimation(event.key.toLowerCase());
+    pianoKey(event.key.toUpperCase());
+    
 })
 
 // Event Listener for dark mode
