@@ -68,7 +68,7 @@ document.addEventListener("keypress", function(event){
 document.querySelector(".theme-mode").addEventListener("click",function(){
     
     if(this.innerHTML === "Click for Dark Mode 🌑"){
-        this.innerHTML = "Click for Dark Mode ☀️";
+        this.innerHTML = "Click for Light Mode ☀️";
     } else{
         this.innerHTML = "Click for Dark Mode 🌑";
     };
